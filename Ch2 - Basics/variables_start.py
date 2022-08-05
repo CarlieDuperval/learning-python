@@ -32,11 +32,24 @@ print(mytuple[1])
 # use slices to get parts of a sequence
 print(mylist[1:5])
 print(mylist[1:5:2])
+
 # you can use slices to reverse a sequence
+print(mylist[: : -1])
 
-# dictionaries are accessed via keys
+# dictionaries are accessed via keys: they dont work with indices
+print(mydict['one'])
 
-# ERROR: variables of different types cannot be combined
+# ERROR: variables of different types cannot be combined// all arguments suppose to be the same type
+print('string type' + str(123))
 
 # Global vs. local variables in functions
+def someFunction():
+    global mystr
+    mystr = "def"
+    print(mystr)
 
+someFunction()
+print(mystr)
+
+del mystr
+print(mystr)
