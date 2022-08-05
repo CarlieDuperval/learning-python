@@ -20,7 +20,7 @@ def func2(arg1, arg2):
 def cube(x):
     return x * x * x
 
-# TODO: function with default value for an argument
+# TODO: function with default value for an argument x=1
 def power(num, x=1):
     result = 1;
     for i in range(x):
@@ -28,6 +28,12 @@ def power(num, x=1):
     return result
 
 # TODO: function with variable number of arguments
+def multi_add(*args):
+    result = 0
+    for x in args:
+        result = result + x
+    return result
+
 
 # func1()
 # print(func1())
@@ -39,5 +45,9 @@ def power(num, x=1):
 # print(cube(3))
 
 
-print(power(2))
-print(power(2,3))
+# print(power(2))
+# print(power(2,3))
+# print(power (x=3, num=2))
+
+
+print(multi_add(4, 5, 10, 4, 10))
