@@ -13,6 +13,7 @@ class Vehicle():
 
 class Car(Vehicle):
     def __init__ (self, enginetype):
+        # to access methods and properties within the parent class of the class where super() is being called from
         super().__init__('Car')
         self.wheels = 4
         self.doors = 4

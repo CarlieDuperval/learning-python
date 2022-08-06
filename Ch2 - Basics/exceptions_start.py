@@ -22,6 +22,7 @@ except ZeroDivisionError as e:
 except ValueError as e:
     print("You didn't give me a valid number!")
     print(e)
+    # This always run
 finally:
     print("This code always runs")
 
