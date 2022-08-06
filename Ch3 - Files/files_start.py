@@ -6,14 +6,15 @@
 
 def main():  
     # Open a file for writing and create it if it doesn't exist: create it w+
-    myfile = open("textfile.txt", "w+")
+    # myfile = open("textfile.txt", "w+")
     
-    # Open the file for appending text to the end
-
+    # Open the file for appending text to the end: Added new text on existing file
+    myfile = open("textfile.txt", "a+")
 
     # write some lines of data to the file
     for i in range(10):
-        myfile.write("This is some text\n")
+        # myfile.write("This is some text\n")
+        myfile.write("More Text added for you\n")
     
     # close the file when done
     myfile.close()
