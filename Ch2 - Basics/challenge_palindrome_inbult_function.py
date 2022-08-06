@@ -18,7 +18,7 @@ def isPalindrome(string):
         return True
     return False
 
-string = "Darie"
+string = "MADOAM"
 result = isPalindrome(string)
 
 if (result):
